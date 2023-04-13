@@ -42,6 +42,12 @@ jobs:
         
       - name: Build Storybook
         run: pnpm build-storybook
+        
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: storybook-test-build
+          path: ./storybook-static
 
   # Deployment job
   deploy:
