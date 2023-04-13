@@ -65,4 +65,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         with:
-          artifact-name: storybook-test-build
+          artifact_name: storybook-test-build
