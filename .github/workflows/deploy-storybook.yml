@@ -22,9 +22,6 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    defaults: 
-      run: 
-        working-directory: ./apps/storybook-test
     steps:
       - name: Checkout
         uses: actions/checkout@v3
